@@ -10,11 +10,11 @@ export default function Login() {
         <>
             <h1>Login to your account</h1>
             <div className="column">
-                <Illustration image={LoginImg}/>
+                <Illustration image={LoginImg} />
                 <Form className={classes.login}>
                     <Textinput type='email' placeholder='Enter Email' icon="alternate_email" />
                     <Textinput type="password" placeholder='Enter Password' icon="lock" />
-                    <Button>Submit now</Button>
+                    <Button><span> Submit now</span></Button>
                     <div className="info">Already have an account? <a href="login.html">Login</a> instead.</div>
                 </Form>
             </div>
