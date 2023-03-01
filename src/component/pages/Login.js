@@ -4,6 +4,7 @@ import Illustration from "../Illustration";
 import Textinput from "../Textinput";
 import classes from "../../styles/Login.module.css"
 import LoginImg from '../../assets/images/login.svg'
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     return (
@@ -15,7 +16,7 @@ export default function Login() {
                     <Textinput type='email' placeholder='Enter Email' icon="alternate_email" />
                     <Textinput type="password" placeholder='Enter Password' icon="lock" />
                     <Button><span> Submit now</span></Button>
-                    <div className="info">Already have an account? <a href="login.html">Login</a> instead.</div>
+                    <div className="info">Already have an account? <Link to="/signup">Signup</Link> instead.</div>
                 </Form>
             </div>
 

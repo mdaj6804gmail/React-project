@@ -1,4 +1,5 @@
 import classes from "../styles/Accound.module.css";
+import { Link } from 'react-router-dom';
 
 export default function Accound() {
     return (
@@ -6,7 +7,8 @@ export default function Accound() {
             <span className="material-icons-outlined" title="Account">
                 account_circle
             </span>
-            <a href="signup.html">Signup</a>
+            <Link to={"/signup"} title="Signup">Signup</Link>
+            <Link to={"/login"}>Login</Link>
             {/* <!-- <span class="material-icons-outlined" title="Logout"> logout </span> --> */}
         </div>
     );

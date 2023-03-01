@@ -5,6 +5,7 @@ import Form from "../Form"
 import Illustration from "../Illustration"
 import Textinput from "../Textinput"
 import signupImg from "../../assets/images/signup.svg"
+import { Link } from 'react-router-dom';
 export default function Signup() {
 
     return (
@@ -19,7 +20,7 @@ export default function Signup() {
                     <Textinput type="password" placeholder='Confirm password' icon="lock_clock" />
                     <Checkbox text="I agree to the Terms &amp; Conditions" />
                     <Button><span> Submit now</span></Button>
-                    <div className="info">Already have an account? <a href="login.html">Login</a> instead.</div>
+                    <div className="info">Already have an account? <Link  to={"/login"}>Login</Link> instead.</div>
 
                 </Form>
             </div>
